@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <header class="text-3xl font-semibold text-center">
+      Your Main Account Infromation
+   </header>
+   <main>
+      <section class="mt-10">
+         <div class="grid grid-cols-3 gap-10  w-9/12 m-auto mt-20 ">
+            <div  class="bg-sky-700 p-8 text-center text-3xl rounded-full font-bold ">
+               <h1 >Deposite</h1>
+               <h1>$<span id="depo-amount">00</span></h1>
+            </div>
+            <div class="bg-sky-500 p-8 text-center text-3xl rounded-full font-bold ">
+               <h1>Withdraw</h1>
+               <h1>$<span id="withdraw-amount">00</span></h1>
+            </div>
+            <div class="bg-sky-200 p-8 text-center text-3xl rounded-full font-bold">
+               <h1>Total Balance</h1>
+               <h1>$<span id="total-taka">1240</span></h1>
+            </div>
+
+         </div>
+         
+      </section>
+      <section class="">
+         <div class="grid grid-cols-2 gap-10  w-9/12 m-auto mt-20 ">
+            <div class="bg-yellow-500 p-10 text-3xl rounded-lg font-bold ">
+               <h1 class="mb-2 text-white" >Deposite</h1>
+               <input id="amount-box" type="text" class="w-9/12 p-1 text-sm mb-2 block" placeholder="Enter Deposite Amount" autofocus>
+            <button id="depo-button" class="bg-yellow-700 text-sm p-2 rounded-lg hover:bg-slate-400 w-32">
+               deposite
+            </button>
+            </div>
+
+            <div class="bg-rose-600 p-8 text-3xl rounded-lg font-bold ">
+               <h1>Withdraw</h1>
+               <input id="withdraw-box" type="text" class="w-9/12 p-1 text-sm mb-2 block" placeholder="Enter Deposite Amount" autofocus>
+            <button class="bg-amber-500 text-sm p-2 rounded-lg hover:bg-slate-400 w-32" id="withdraw-button">Withdraw </button>
+               
+            </div> 
+      </section>
+        
+       
+   </main>
+
+   <script src="depo.js"></script>
+   
+</body>
+</html>
